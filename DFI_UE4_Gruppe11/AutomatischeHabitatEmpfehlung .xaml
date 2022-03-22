@@ -1,0 +1,20 @@
+﻿<Window x:Class="DFI_UE4_Gruppe11.AutomatischeHabitatEmpfehlung"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DFI_UE4_Gruppe11"
+        mc:Ignorable="d"
+        Title="AutomatischeHabitatEmpfehlung" Height="380" Width="500">
+    <Grid>
+        <DataGrid x:Name="HabitatempfehlungDatagrid" HorizontalAlignment="Left" Height="291" Margin="10,10,0,0" VerticalAlignment="Top" Width="474">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Pflanze" Width="*" Binding="{Binding pflanze_be}"/>
+                <DataGridTextColumn Header="Originale Habitat" Width="*" Binding="{Binding habitat_be}" />
+                <DataGridTextColumn Header="Optimale Habibtat" Width="*" Binding="{Binding habitat_optimal_be}"/>
+                <DataGridCheckBoxColumn Header="Ist Optimal" Width="*" Binding="{Binding ob_optimal}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" Width="474" Height="24"/>
+    </Grid>
+</Window>

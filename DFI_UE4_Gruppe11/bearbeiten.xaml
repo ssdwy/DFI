@@ -1,0 +1,24 @@
+﻿<Window x:Class="DFI_UE4_Gruppe11.bearbeiten"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DFI_UE4_Gruppe11"
+        mc:Ignorable="d"
+        Title="Pflanzen bearbeiten" Height="264" Width="330">
+    <Grid>
+        <Label Content="Beizeichnung:" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gewächshaus:" HorizontalAlignment="Left" Margin="21,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Habitat:" HorizontalAlignment="Left" Margin="21,87,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wasserverbrauch:" HorizontalAlignment="Left" Margin="21,123,0,0" VerticalAlignment="Top"/>
+        <Label Content="Düngerverbrauch:" HorizontalAlignment="Left" Margin="21,154,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="be_BezeichnungTextbox" HorizontalAlignment="Left" Height="23" Margin="141,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="be_WasserverbrauchTextbox" HorizontalAlignment="Left" Height="23" Margin="141,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" RenderTransformOrigin="0.589,0.438"/>
+        <TextBox x:Name="be_DuengerverbrauchTextbox" HorizontalAlignment="Left" Height="23" Margin="141,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" RenderTransformOrigin="0.589,0.438"/>
+        <ComboBox x:Name="HabCombobox" HorizontalAlignment="Left" Margin="141,91,0,0" VerticalAlignment="Top" Width="136"/>
+        <Label Content="l/Tag" HorizontalAlignment="Left" Margin="246,123,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label Content="g/Monat" HorizontalAlignment="Left" Margin="246,151,0,0" VerticalAlignment="Top" Width="67"/>
+        <ComboBox x:Name="be_GewaechshausCombobox" HorizontalAlignment="Left" Margin="141,52,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="OKButton" Content="OK" HorizontalAlignment="Left" Margin="21,200,0,0" VerticalAlignment="Top" Width="292" Click="OKButton_Click"/>
+    </Grid>
+</Window>
