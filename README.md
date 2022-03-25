@@ -1,2 +1,2 @@
-# DFI
+# C# / SQLite Gewächshausverwaltung
 c#/.net
